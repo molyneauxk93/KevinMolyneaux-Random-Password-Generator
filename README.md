@@ -57,3 +57,7 @@ The following shows alert to user if specified character length is less than 8 o
 The following shows alert to user if no character types are selected. At least one must be selected: 
 
 ![alt text](images/characterTypeAlert.jpg) 
+
+The following shows the message returned to the textbox on the screen once an alert is acknowledged: 
+
+![alt text](images/AlertAcknlowedged.jpg) 
