@@ -9,7 +9,7 @@ function generatePassword() {
   var specialChars = ['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', "]"];
   var criteria = [];
   var numeric = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-  
+
   //this array exists to ensure when random characters are being selected from the criteria, all required character types will always appear in the finalPassword
   var guaranteeChars = [];
 
@@ -21,7 +21,9 @@ function generatePassword() {
   if (passwordLength >= 8 && passwordLength <= 128) {
     console.log("You have met the length criteria");
   } else {
+    //outputs alert if requirement not met and ends function
     alert("You have not met the length criteria. Please refresh and try again.");
+    return;
   }
 
   // Gather users desired character types to be included 
@@ -37,7 +39,9 @@ function generatePassword() {
   if (passwordUpperCase === true || passwordLowerCase === true || passwordNumeric === true || passwordSpecial === true) {
     console.log("You have selected at least one of the character types.")
   } else {
+    //outputs alert if requirement not met and ends function
     alert("You must select at least one character type! Refresh page and try again.");
+    return;
   }
 
   // If user selected uppercase characters to be included, we push a random uppercase character to guaranteed characters array, and add the uppercase string to the critera
