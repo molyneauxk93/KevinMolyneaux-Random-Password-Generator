@@ -6,7 +6,7 @@ function generatePassword() {
 
   var alphabetLowerCase = "abcdefghijklmnopqrstuvwxyz";
   var alphabetUpperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  var specialChars = ['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', "]"];
+  var specialChars = ['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', "]", "^","-","`","{","|","}","~"];
   var criteria = [];
   var numeric = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
   var returnmsg = "Click 'Generate Pasword' button and try again";
