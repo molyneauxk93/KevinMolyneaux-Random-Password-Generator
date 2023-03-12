@@ -1,4 +1,4 @@
-# Module 3 Challenge - Random Password Generator
+# Random Password Generator
 
 ## Description
 
